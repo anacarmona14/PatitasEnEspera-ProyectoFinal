@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Solicitud de Adopción</title>
+        <link href="../CSSFolder/AdopcionStyle.CSS" rel="stylesheet" type="text/css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../Index.html"><img src="https://iili.io/HkOGHej.png" alt="Logo"/></a>
+                    </li>
+                    <li>
+                        <a href="../AcercaNosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="../HTMLFolder/EncuestaAdopcion.html">Quiero adoptar</a>
+                    </li>
+                    <li>
+                        <a href="../HTMLFolder/QuieroDarEnAdopcion.html">Quiero dar en adopción </a>
+                    </li>
+                    <li>
+                        <a href="../">Apóyanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="TituloFormulario">
+            <main>
+                <div class="ContenedorBanner">
+                    <img src="https://iili.io/HkOckFa.png" alt="Banner Adopción Perrito">
+                </div>
+                <h1>
+                    ¡Bienvenid@ al formulario de adopcion de Patitas En Espera!<br>Por favor responde las siguientes preguntas
+                    para ayudarte a encontrar tu peludo ideal.
+                </h1>
+        </div>
+        <div class="CajaFormulario">
+            <form action="../Index.html" method="POST">
+                    <ol>
+                        <li>
+                            <label for="email">Correo electrónico:</label>
+                            <input class="CampoDeRespuesta" type="email" id="email" name="email" required value="email@dominio.com">
+                        </li>
+                        <li>
+                            <label for="nombre">Nombre Completo:</label>
+                            <input class="CampoDeRespuesta" type="text" id="nombre" name="nombre" required>
+                        </li>
+                        <li>
+                            <label for="direccion">Dirección:<br></label>
+                            <input class="CampoDeRespuesta" type="text" id="direccion" name="direccion" required>
+                        </li>
+                        <li>
+                            <label for="documento">Número de documento:</label>
+                            <input class="CampoDeRespuesta" type="number" id="documento" name="documento" required>
+                        </li>
+                        <li>
+                            <label for="contacto">Número de contacto:</label>
+                            <input class="CampoDeRespuesta" type="tel" id="contacto" name="contacto" required>
+                        </li>
+                        <li>
+                            <label for="experiencia">¿Tienes o has tenido otras mascotas?</label>
+                            <select class="CampoDeRespuesta" id="experiencia" name="experiencia" required>
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                            <br>
+                            <textarea class="CampoDeRespuesta" id="experiencia" name="experiencia" placeholder="Describe tu experiencia"></textarea>
+                        </li>
+                        <li>
+                            <label for="personas">¿Cuántas personas viven en tu casa?</label>
+                            <input class="CampoDeRespuesta" type="number" id="personas" name="personas" required>
+                        </li>
+                        <li>
+                            <label for="acuerdo">¿Están todos de acuerdo en adoptar?</label>
+                            <select class="CampoDeRespuesta" id="acuerdo" name="acuerdo">
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                                </select>
+                        </li>
+                        <li>
+                            <label for="interesa">Te interesa tener:</label>
+                            <select class="CampoDeRespuesta" id="interesa" name="interesa" required>
+                                <option value="PERRO">Un perro</option>
+                                <option value="GATO">Un gato</option>
+                                <option value="OTRO">Otro tipo de mascota</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="ninos">¿Tienes niños en casa?</label>
+                            <select class="CampoDeRespuesta" id="ninos" name="ninos" required>
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="alquiler">En caso de vivir en alquiler, ¿sabes si tus arrendatarios permiten tener mascotas?</label>
+                            <select class="CampoDeRespuesta" id="alquiler" name="alquiler" required>
+                                <option value="Si">Sí</option>
+                                <option value="No">No</option>
+                                <option value="NS">No sé</option>
+                                <option value="CP">Vivo en casa propia</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="balcon-ventana">¿El lugar en el que vives posee balcón y/o ventanas grandes?</label><br>
+                            <select class="CampoDeRespuesta" id="balcon-ventana" name="balcon-ventana" required>
+                                <option value="Si"> Si </option>
+                                <option value="No"> No </option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="reason">¿Por qué deseas adoptar una mascota?</label>
+                            <textarea class="CampoDeRespuesta" id="reason" name="reason" type="text" placeholder="Por favor da una respuesta detallada."></textarea>
+                        </li>
+                        <li>
+                            <label for="experiencia">¿Tienes experiencia previa en el cuidado de mascotas?</label>
+                            <select class="CampoDeRespuesta" id="experiencia" name="experiencia" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="Si">Si</option>
+                            <option value="No">No</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="otros-animales">¿Tienes otros animales en casa?</label><br>
+                            <select class="CampoDeRespuesta" id="otros-animales" name="otros-animales" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="malla-protectora">¿Te comprometes a colocar una malla protectora en dichos espacios?</label><br>
+                            <select class="CampoDeRespuesta" id="malla-protectora" name="malla-protectora" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </li>
+                        <li>
+                            <label for="tiempo-mascota">¿Cuánto tiempo estará sola la mascota?</label>
+                            <input class="CampoDeRespuesta" type="text" id="tiempo-mascota" name="tiempo-mascota" required> 
+                        </li>
+                        <li>
+                            <label for="responsable">¿Quién será el responsable y se hará cargo de cubrir los gastos del adoptado?</label><br>
+                            <input class="CampoDeRespuesta" type="text" id="responsable" name="responsable" required> 
+                        </li>
+                        <li>
+                            <label for="medidas-comportamiento">Si el comportamiento de la mascota adoptada No es el esperado, ¿Qué medidas tomarías?</label>
+                            <textarea class="CampoDeRespuesta" id="medidas-comportamiento" name="medidas-comportamiento" type="text"  placeholder="Por favor da una respuesta detallada." required></textarea>
+                        </li>
+                        <li>
+                            <label for="esterilizacion">En caso de que la mascota No esté esterilizada, ¿Te comprometes a esterilizarla cuando esta tenga la edad suficiente?</label><br>
+                            <select class="CampoDeRespuesta" id="esterilizacion" name="esterilizacion" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="Si">Si</option>
+                                <option value="No">No</option>
+                            </select>
+                        </li>
+                    </ol>
+                        <p>
+                            En Patitas en espera realizamos un seguimiento de por vida a nuestros peludos, por lo que ocasionalmente solicitaremos fotos y videos para estar al tanto de su adaptación y crecimiento durante los meses posteriores a la adopción. Ante la falta de comunicación o alteración de los datos personales del adoptante, la organización se reserva el derecho a retirar al animal por su seguridad. Para enviar el formulario debes estar de acuerdo con estas condiciones.
+                        </p>
+                        <div class="CajaConfirmacion">
+                            <label><input type="checkbox" id="cbox1" value="aceptar" required> Acepto</label>
+                            <br>
+                            <input class="BotonEnvio" type="submit" value="Enviar">
+                        </div>
+                    </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer">
+            <div class="Nosotros">
+                <img src="https://iili.io/HkvZpte.png" class="logoblanco">
+                <h2>Nosotros</h2>
+                <p>Ayudamos a los que no tienen voz propia y mas aun, los únicos que aman sin condición.</p>
+            </div>
+            <div class="Contactanos">
+                <h2> Contactanos</h2>
+                <p>(+57) 321 208 7092</p>
+                <p>ayuda@patitasenespera.org</p>
+                <p class="margen-inferior-parrafo">Bogotá, Cundinamarca</p>
+                <h2>Síguenos en redes</h2>
+                <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="https://iili.io/Hkvt1iG.png" width="60" height="60"></img></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="https://iili.io/HkvtGff.png" width="60" height="60"></img></a>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>

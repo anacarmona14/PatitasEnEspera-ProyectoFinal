@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>Solicitud de Adopción</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+        </style>
+        <link href="../CSSFolder/DarEnAdopcionStyle.CSS" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../Index.html"><img src="https://iili.io/HkOGHej.png" alt="Logo"/></a>
+                    </li>
+                    <li>
+                        <a href="../AcercaNosotros.html">Acerca de Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="../HTMLFolder/EncuestaAdopcion.html">Quiero adoptar</a>
+                    </li>
+                    <li>
+                        <a href="../HTMLFolder/QuieroDarEnAdopcion.html">Quiero dar en adopción </a>
+                    </li>
+                    <li>
+                        <a href="../">Apóyanos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="TituloFormulario">
+            <main>
+                <div class="ContenedorBanner">
+                    <img src="https://iili.io/HvvRJHP.png" alt="Banner Adopción Perrito">
+                </div>
+                <h1>
+                    En Patitas En Espera estamos comprometidos con darle una segunda oportunidad a todos los animales que podamos.
+                    <br>
+                    Si deseas dar en adopción, por favor responde las siguientes preguntas para definir cómo podemos ayudarte.
+                </h1>
+        </div>
+        <div class="CajaFormulario">
+            <form>
+                <div>
+                    <label for="nombre-peludo">Nombre del Peludo:</label>
+                    <input class="CampoDeRespuesta" type="text" id="nombre-peludo" name="nombre-peludo" required>
+                    <br>
+                    <label for="especie">Especie: </label><br>
+                    <select class="CampoDeRespuesta" id="especie" name="especie" required>
+                        <option value="felino">Felino</option>
+                        <option value="canino">Canino</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="edad">Edad: </label><br>
+                    <select class="CampoDeRespuesta" id="edad" name="edad" required>
+                        <option value="0m">Menos de 1 mes</option>
+                        <option value="1m">1 mes</option>
+                        <option value="2m">2 meses</option>
+                        <option value="3m">3 meses</option>
+                        <option value="4m">4 meses</option>
+                        <option value="5m">5 meses</option>
+                        <option value="6m">6 meses</option>
+                        <option value="7m">7 meses</option>
+                        <option value="8m">8 meses</option>
+                        <option value="9m">9 meses</option>
+                        <option value="10m">10 meses</option>
+                        <option value="11m">11 meses</option>
+                        <option value="1a">1 año</option>
+                        <option value="2a">2 años</option>
+                        <option value="3a">3 años</option>
+                        <option value="4a">4 años</option>
+                        <option value="5a">5 años</option>
+                        <option value="6a">6 años</option>
+                        <option value="7a">7 años</option>
+                        <option value="8a">8 años</option>
+                        <option value="9a">9 años</option>
+                        <option value="10a">10 años</option>
+                        <option value="mas11a">Más de 11 años</option>
+                    </select>
+                        <label>Cuentanos su historia: </label>
+                        <textarea class="CampoDeRespuesta" name="info" placeholder="Ej:Lo encontre en la carretera..."></textarea><br>
+                        <label for="esterilizado">¿Está esterilizado?: </label>
+                        <select class="CampoDeRespuesta" id="esterilizado" name="esterilizado" required>
+                                <option value="no">No</option>
+                                <option value="si">Si</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="desparasitado">¿Está desparasitado?: </label>
+                        <select class="CampoDeRespuesta" id="desparasitado" name="desparasitado" required>
+                            <option value="no">No</option>
+                            <option value="si">Si</option>
+                            <option value="nose">No sé</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="vacunas">¿Tiene las vacunas al día?: </label>
+                        <select class="CampoDeRespuesta" id="vacunas" name="vacunas">
+                            <option value="no">No</option>
+                            <option value="si">Si</option>
+                            <option value="nose">No sé</option>
+                        </select>
+                    </div>
+                    <div class="MiniContenedorFormulario">
+                        <div class="CajaTextoVacunas">
+                            <h3>Selecciona las vacunas que tenga:</h3>
+                        </div>
+                        <div class="CajaTextoVacunas">
+                            <h3>Canino</h3>
+                        </div>
+                        <label for="parvovirus">Parvovirus</label>
+                        <input type="checkbox" id="parvovirus" name="parvovirus">
+                        <label for="moquillo">Moquillo</label>
+                        <input type="checkbox" id="moquillo" name="moquillo">
+                        <label for="hepatitis">Hepatitis infecciosa canina</label>
+                        <input type="checkbox" id="hepatitis" name="hepatitis">
+                        <label for="bordetelosis">Bordetelosis</label>
+                        <input type="checkbox" id="bordetelosis" name="bordetelosis">
+                        <label for="leptospirosis">Leptospirosis</label>
+                        <input type="checkbox" id="leptospirosis" name="leptospirosis">
+                        <label for="antirabica">Antirabica</label>
+                        <input type="checkbox" id="antirabica" name="antirabica">
+                        <label for="parainfluenza">Parainfluenza</label>
+                        <input type="checkbox" id="parainfluenza" name="parainfluenza">
+                        <label for="distemper">Distemper</label>
+                        <input type="checkbox" id="distemper" name="distemper">
+                    </div>
+                    <div class="MiniContenedorFormulario">
+                        <div class="CajaTextoVacunas">
+                            <h3>Felino</h3>
+                        </div>
+                        <label for="leucemia">Leucemia</label>
+                        <input type="checkbox" id="leucemia" name="leucemia">
+                        <label for="tripleVirica">Triple Virica</label>
+                        <input type="checkbox" id="tripleVirica" name="tripleVirica">
+                        <label for="pif">PIF</label>
+                        <input type="checkbox" id="pif" name="pif">
+                    </div>
+                    <div id="ContenedorInfoAdicional">
+                        <label>Información adicional del peludo:</label>
+                        <textarea class="CampoDeRespuesta" id="info-mascota" name="info-mascota" placeholder="cirugias, diagnosticos..."></textarea><br>
+                        <label>Nombre del responsable:</label>
+                        <input class="CampoDeRespuesta" type="text" id="nombre-responsable"><br>
+                        <label>Teléfono de contacto:</label>
+                        <input class="CampoDeRespuesta" type="text" id="telefono-contacto"><br>
+                        <label>Correo Electronico:</label>
+                        <input class="CampoDeRespuesta" type="text" id="correo-electronico"><br>
+                    </div>
+                    <div class="CajaConfirmacion">
+                        <input class="BotonEnvio" type="submit" value="Enviar">
+                    </div>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div class="footer">
+            <div class="Nosotros">
+                <img src="https://iili.io/HkvZpte.png" class="logoblanco">
+                <h2>Nosotros</h2>
+                <p>Ayudamos a los que no tienen voz propia y más aún, los únicos que aman sin condición.</p>
+            </div>
+            <div class="Contactanos">
+                <h2> Contactanos</h2>
+                <p>(+57) 321 208 7092</p>
+                <p>ayuda@patitasenespera.org</p>
+                <p class="margen-inferior-parrafo">Bogotá, Cundinamarca</p>
+                <h2>Síguenos en redes</h2>
+                <div class="redes">
+                <a href="https://www.facebook.com/" target="_blank"><img src="https://iili.io/Hkvt1iG.png" width="60" height="60"></img></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="https://iili.io/HkvtGff.png" width="60" height="60"></img></a>
+                </div>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
