@@ -248,7 +248,7 @@ nav ul li a {
     padding-bottom: 56.25%;
     height: 0;
     width: 100%;
-    margin-bottom: ;
+    margin-bottom: 16 px
 }
 
 .video-responsive iframe{
@@ -326,6 +326,7 @@ nav ul li a {
         justify-content: center;
         
         }
+    }   
 
 ol{
     list-style-position: inside;
@@ -391,13 +392,14 @@ ol{
 }
 
 .tituloformulario{
-    padding: 20%;
+    padding: 8px
 
 }
 
-@media only screen and (max-width: 768px) 
-    .tituloformulario {
+@media only screen and (max-width: 768px){
+    .tituloformulario{
         flex-direction: column;
-        justify-content: center;
+        justify-content:center;
         text-align: justify; 
     }
+}   
