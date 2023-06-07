@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Patitas en Espera</title>
-        <link href="./CSSFolder/IndexStyle.css" rel="stylesheet" type="text/css">
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-        </style>
-    </head>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../Index.html"><img src="https://iili.io/HkOGHej.png" alt="Logo"/></a>
-                    </li>
-                    <li>
-                        <a href="../HTMLFolder/AcercaNosotros.html">Acerca de nosotros</a>
-                    </li>
-                    <li>
-                        <a href="../HTMLFolder/EncuestaAdopcion.html">Quiero adoptar</a>
-                    </li>
-                    <li>
-                        <a href="../HTMLFolder/QuieroDarEnAdopcion.html">Quiero dar en adopción </a>
-                    </li>
-                    <li>
-                        <a href="../HTMLFolder/Apoyanos.html">Apóyanos</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <div class="TituloFormulario">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Patitas en Espera</title>
+    <link href="./CSSFolder/IndexStyle.CSS" rel="stylesheet" type="text/css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../Index.html"><img src="https://iili.io/HkOGHej.png" alt="Logo"/></a>
+                </li>
+                <li>
+                    <a href="../HTMLFolder/AcercaNosotros.html">Acerca de nosotros</a>
+                </li>
+                <li>
+                    <a href="../HTMLFolder/EncuestaAdopcion.html">Quiero adoptar</a>
+                </li>
+                <li>
+                    <a href="../HTMLFolder/QuieroDarEnAdopcion.html">Quiero dar en adopción </a>
+                </li>
+                <li>
+                    <a href="../HTMLFolder/Apoyanos.html">Apóyanos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="TituloFormulario">
         <div class="ContenedorBanner">
-            <img src="https://iili.io/HkvLjOF.jpg"
-                alt="Banner de la página web">
-        </div>
+            <img src="https://iili.io/HkvLjOF.jpg" alt="Banner de la página web">
         </div>
         <main>
             <div class="contenedordos">
@@ -50,7 +49,7 @@
                             en situación de abandono, maltrato o necesidad. Trabajamos en conjunto con la comunidad y las
                             entidades gubernamentales responsables para generar conciencia sobre
                             la importancia de respetar y cuidar a los animales.
-                            <br></br>
+                            <br/>
                             Nos esforzamos día a día por brindar atención médica, alimento y refugio a aquellos que lo
                             necesitan. También promovemos la adopción responsable de animales através
                             de nuestras plataformas online, facilitando la búsqueda de hogares de paso y permanentes que
@@ -66,7 +65,7 @@
                 Nuestras labores
             </h1>
         </div>
-        <br></br>
+        <br/>
         <div class="Nuestraslabores">
 
             <div class="Campañasvacunacion">
@@ -116,11 +115,9 @@
             <div class="nuestrorefugio">
                 <div class="video-container">
                     <div class="video-responsive">
-                        <iframe
-                        src="https://www.youtube.com/embed/Loszq6DjUr0"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+                        <iframe src="https://www.youtube.com/embed/Loszq6DjUr0" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
                         </iframe>
                     </div>
                 </div>
@@ -135,28 +132,101 @@
                 </div>
             </div>
         </div>
+        <div class="formulario">
+            <img src="https://iili.io/H4xzdLN.jpg">
+        </div>
+        <div class="tituloformulario">
+            <h1>¿Quieres ser Voluntario?</h1>
+            <p> ¿No puedes adoptar, apadrinar, ni donar, pero tienes tiempo, pasión, compromiso, disposición, tienes un
+                corazón peludito por entregar? Nuestro grupo de voluntarios es tu lugar. Te invitamos a llenar el
+                siguiente formulario</p>
+        </div>
 
-        <footer>
-            <div class="footer">
-                <div class="Nosotros">
-                    <img src="https://iili.io/HkvZpte.png" class="logoblanco">
-                    <h2>Nosotros</h2>
-                    <p>Ayudamos a los que no tienen voz propia y mas aun, los únicos que aman sin condición.</p>
-                </div>
-                <div class="Contactanos">
-                    <h2> Contactanos</h2>
-                    <p>(+57) 321 208 7092</p>
-                    <p>ayuda@patitasenespera.org</p>
-                    <p class="margen-inferior-parrafo">Bogota, Cundinamarca</p>
-                    <h2>Síguenos en redes</h2>
+        <div>
+            <div class="CajaFormulario">
+                <form action="./Index.html" method="POST">
+                    <ol>
+                        <li>
+                            <label class="NombreDelCampo" for="nombre">Nombre:</label>
+                            <input class="CampoDeRespuesta" type="text" id="nombre" name="nombre" required>
+                        </li>
+                        <li>
+                            <label class="NombreDelCampo" for="apellido">Apellido:</label>
+                            <input class="CampoDeRespuesta" type="text" id="apellido" name="apellido" required>
+                        </li>
+                        <li>
+                            <label class="NombreDelCampo" for="edad">Edad:</label>
+                            <input class="CampoDeRespuesta" type="text" id="Edad" name="Edad" required pattern="[0-9]+"
+                                title="Por favor, ingresa solo números">
+                        </li>
+                        <li>
+                            <label class="NombreDelCampo" for="Ciudad">Ciudad:</label>
+                            <input class="CampoDeRespuesta" type="text" id="Ciudad" name="Ciudad" required>
+                        </li>
+                        <li>
+                            <label class="NombreDelCampo" for="Correo">Correo:</label>
+                            <input class="CampoDeRespuesta" type="email" id="Correo" name="Correo" required
+                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}"
+                                title="Por favor, ingresa un correo electrónico válido">
+                        </li>
+                        <li>
+                            <label for="hogarPara">Hogar para:</label>
+                            <select class="CampoDeRespuesta" id="hogarPara" name="hogarPara" required>
+                                <option value="PERRO">Un perro</option>
+                                <option value="GATO">Un gato</option>
+                                <option value="OTRO">Otro tipo de mascota</option>
+                            </select>
+                        </li>
+                        <input class="BotonEnvio" type="submit" value="Enviar">
+                    </ol>
+                </form>
+            </div>
+            <div>
+                <h1>¡Gracias por inscribirte!</h1>
+                <h3>Estos son los datos que proporcionaste. Pronto nos pondremos en contacto contigo</h3>
+                <ul id="listaVoluntarios"></ul>
+                <script src="ScriptListaV.js"></script>
+            </div>
+        </div>
+        <div class="titulo-voluntarios">
+            <h1> Conoce Nuestros Voluntarios</h1>
+        </div>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Ciudad</th>
+                    <th>Correo</th>
+                    <th>Hogar para</th>
+                </tr>
+            </table>
+            <script src="BaseDatosVoluntarios.js"></script>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="Nosotros">
+                <img src="https://iili.io/HkvZpte.png" class="logoblanco">
+                <h2>Nosotros</h2>
+                <p>Ayudamos a los que no tienen voz propia y mas aun, los únicos que aman sin condición.</p>
+            </div>
+            <div class="Contactanos">
+                <h2> Contactanos</h2>
+                <p>(+57) 321 208 7092</p>
+                <p>ayuda@patitasenespera.org</p>
+                <p class="margen-inferior-parrafo">Bogota, Cundinamarca</p>
+                <h2>Síguenos en redes</h2>
                 <div class="redes">
-                    <a href="https://www.facebook.com/" target="_blank"><img
-                            src="https://iili.io/Hkvt1iG.png" width="60" height="60"></img></a>
-                    <a href="https://www.instagram.com/" target="_blank"><img
-                            src="https://iili.io/HkvtGff.png" width="60" height="60"></img></a>
-                </div>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="https://iili.io/Hkvt1iG.png"
+                            width="60" height="60"></img></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="https://iili.io/HkvtGff.png"
+                            width="60" height="60"></img></a>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
 </html>
