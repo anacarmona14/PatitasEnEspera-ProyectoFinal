@@ -87,3 +87,48 @@ fila.appendChild(hogarParaCelda);
 
 tablaVoluntarios.appendChild(fila);
 });
+
+fetch('https://randomuser.me/api/?results=3')
+    .then(response => response.json())
+    .then(data => {
+        const voluntariosAPI = data.results;
+        voluntariosAPI.forEach(voluntario => {
+        const fila = document.createElement('tr');
+
+        const nombreCelda = document.createElement('td');
+        nombreCelda.textContent = voluntario.name.first;
+        fila.appendChild(nombreCelda);
+
+        const apellidoCelda = document.createElement('td');
+        apellidoCelda.textContent = voluntario.name.last;
+        fila.appendChild(apellidoCelda);
+
+        const edadCelda = document.createElement('td');
+        edadCelda.textContent = voluntario.dob.age;
+        fila.appendChild(edadCelda);
+
+        const ciudadCelda = document.createElement('td');
+        ciudadCelda.textContent = voluntario.location.city;
+        fila.appendChild(ciudadCelda);
+
+        const correoCelda = document.createElement('td');
+        correoCelda.textContent = voluntario.email;
+        fila.appendChild(correoCelda);
+
+        const hogarParaCelda = document.createElement('td');
+        hogarParaCelda.textContent = obtenerHogarPara();
+        fila.appendChild(hogarParaCelda);
+
+        function obtenerHogarPara() {
+            const opciones = ["perro", "gato"];
+            const indice = Math.floor(Math.random() * opciones.length);
+            return opciones[indice];
+        }
+
+        tablaVoluntarios.appendChild(fila);
+        });
+    })
+    .catch(error => {
+        console.log('Error al obtener los datos de la API:', error);
+    });
+
