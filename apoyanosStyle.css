@@ -169,13 +169,15 @@ text-align: justify;
     margin-bottom: 16px;
 }
 
-.logoblanco{
+.Nosotros img{
     width: 300px;
     height: auto;
     
 }
 
-.redes{
+.redes img{
     padding: 0px 20px 20px 0px;
+    width: 100px;
+    height: auto;
 }
 
