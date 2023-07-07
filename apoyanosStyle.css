@@ -74,7 +74,7 @@ nav ul li a {
 }  
 
 
-.comoapoyarnos{
+.apoyanos{
    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -90,6 +90,26 @@ nav ul li a {
                 }
 
 
+.voluntariado{
+box-sizing: border-box;
+padding: 15px 20px 30px;
+border-radius: 25px;
+background-color: #f4f4f4;
+}
+
+.donaciones{
+    box-sizing: border-box;
+    padding: 15px 20px 30px;
+    border-radius: 25px;
+    background-color: #f4f4f4;
+    }
+
+.hogarpaso{
+box-sizing: border-box;
+padding: 15px 20px 30px;
+border-radius: 25px;
+background-color: #f4f4f4;
+    }   
 
 .footer{
     background-color: #C08497;
