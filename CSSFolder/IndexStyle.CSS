@@ -16,6 +16,19 @@ nav {
     background-color: #F3F3F3;
 }
 
+table {
+    width: 100%;
+    white-space: nowrap;
+}
+
+p{
+    margin: 1em auto 2em;
+    padding: 0.8em;
+    word-wrap: break-word;
+    text-align: justify;
+    outline: dashed lightgrey;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -50,6 +63,11 @@ nav ul li a {
     justify-content: center;
     height: 100%;
 }
+
+td, th {
+    min-width: 120px;
+}
+
 
 @media only screen and (max-width: 768px) {
     h1 {
@@ -94,6 +112,11 @@ nav ul li a {
     grid-gap: 30px;
     grid-auto-rows: minmax(100px, auto);
     padding: 5px 30px 30px 30px;
+}
+
+
+td, th {
+    padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -395,11 +418,22 @@ ol{
 
 }
 
+.tituloformulario p {
+    max-width: 100em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 @media only screen and (max-width: 768px){
     .tituloformulario{
         flex-direction: column;
         justify-content:center;
         text-align: justify; 
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 14px;
     }
 }   
 
@@ -448,6 +482,7 @@ td:last-child {
     margin: 0 auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    overflow-x: auto;
 }
 
 .btn {
